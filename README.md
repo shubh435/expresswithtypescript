@@ -30,7 +30,7 @@
 
     g) To install nodemon with typescript :-
             npm install --save-dev ts-node nodemon
-    h) TO configure the nodemon to the project create one nodemon.config file and add the line of code :-
+    h) TO configure the nodemon to the project create one nodemon.json file and add the line of code :-
             {
             "watch": ["src"],
             "ext": ".ts,.js",
