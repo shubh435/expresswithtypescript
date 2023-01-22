@@ -37,5 +37,6 @@
             "ignore": [],
             "exec": "npx ts-node ./src/index.ts"
             }
+     g) Update the package.json script to :- "start":"npx nodemon"
 
 ### Enjoy development
