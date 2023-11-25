@@ -4,8 +4,9 @@
 
     a) Type command:-
             npm init -y
-    b) Add express server using command:-
+    b) Add express and it's types using command:-
             npm i express
+            npm i --save-dev @types/express
     c) Add the typescript using dev dependencies using command:-
             npm install typescript @types/node --save-dev
     d) Then to create the tsconfig.json file type :-
