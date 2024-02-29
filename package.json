@@ -1,23 +1,26 @@
 {
   "name": "firstnodeprogram",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shubh435/mosh-course.git"
+    "url": "https://github.com/shubh435/expresswithtypescript"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shubh435/mosh-course/issues"
+    "url": "https://github.com/shubh435/expresswithtypescript/issues"
   },
-  "homepage": "https://github.com/shubh435/mosh-course#readme",
+  "homepage": "https://github.com/shubh435/expresswithtypescript#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
