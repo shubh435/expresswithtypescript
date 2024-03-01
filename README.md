@@ -3,18 +3,18 @@
 #### 1. Steps to create the node program using node + express and typescript
 
     a) Type command:-
-            npm init -y
+            `npm init -y`
     b) Add express and it's types using command:-
-            npm i express
-            npm i --save-dev @types/express
+           ` npm i express`
+            `npm i --save-dev @types/express`
     c) Add the typescript using dev dependencies using command:-
-            npm install typescript @types/node --save-dev
+           ` npm install typescript @types/node --save-dev`
     d) Then to create the tsconfig.json file type :-
-            npx tsc --init --rootDir src --outDir build --esModuleInterop \
-            --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+           ` npx tsc --init --rootDir src --outDir build --esModuleInterop \
+            --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true`
     e) we have to add all our source code in src folder
     f) Make sure our tsconfig.json only include this line code below:-
-            {
+            `{
             "compilerOptions": {
             "target": "es5",
              "module": "commonjs",
@@ -27,17 +27,17 @@
             "esModuleInterop": true,
             "resolveJsonModule": true
             }
-            }
+            }`
 
     g) To install nodemon with typescript :-
-            npm install --save-dev ts-node nodemon
+            `npm install --save-dev ts-node nodemon`
     h) TO configure the nodemon to the project create one nodemon.json file and add the line of code :-
-            {
+            `{
             "watch": ["src"],
             "ext": ".ts,.js",
             "ignore": [],
             "exec": "npx ts-node ./src/index.ts"
-            }
-     g) Update the package.json script to :- "start":"npx nodemon"
+            }`
+     g) Update the package.json script to :- `"start":"npx nodemon"`
 
 ### Enjoy development
