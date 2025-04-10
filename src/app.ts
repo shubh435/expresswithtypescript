@@ -2,6 +2,7 @@ import express from "express";
 const app = express();
 import dotenv from "dotenv";
 import path from "path";
+import serverless from "serverless-http";
 dotenv.config();
 const PORT = process.env.PORT || 2000;
 
@@ -14,4 +15,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`____listening on port http://localhost:${PORT}`);
 });
-export default app
+export const handler = serverless(app);
