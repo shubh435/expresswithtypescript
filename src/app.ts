@@ -14,8 +14,15 @@ app.get("/", (req, res) => {
   res.sendFile("./index.html")
 });
 
+app.get("/hello", (req, res) => {
+  res.send("Hello, World!")
+});
+
 app.listen(PORT, () => {
   console.log(`____listening on port http://localhost:${PORT}`);
 });
+
+export default app;
+export { PORT };
 
 
