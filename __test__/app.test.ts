@@ -24,8 +24,9 @@ describe('GET / (root route)', () => {
 
   it('should serve the index.html file', async () => {
     const response = await request(app).get('/');
-    const indexPath = path.resolve(__dirname, '../src/index.html');
-    const fileContent = fs.readFileSync(indexPath, 'utf-8'); // Read the actual file content
-    expect(response.text).toBe(fileContent); // Compare the response with the file content
+    const indexPath = path.resolve(__dirname, '../src/public/index.html');
+    const fileContent = fs.readFileSync(indexPath,'utf-8');
+    expect(response.text).toBe(fileContent);
+
   });
 });

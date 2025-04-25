@@ -8,10 +8,10 @@ dotenv.config();
 const PORT = process.env.PORT || 2000;
 // @ts-ignore
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-app.use(express.static(path.join(__dirname, './Public')))
 
 app.get("/", (req, res) => {
-  res.sendFile("./index.html")
+  const filePath = path.join(__dirname, "Public", "index.html");
+  res.sendFile(filePath);
 });
 
 app.get("/hello", (req, res) => {
